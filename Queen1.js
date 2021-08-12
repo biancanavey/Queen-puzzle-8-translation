@@ -1,24 +1,25 @@
-var Piece = require(Piece)
+import Piece from "./Piece";
 
-class Queen{Piece};
-  function Piece(){
-      this.Piece
+class Queen extends Piece {
+  construtor(){
+      super();
   }
+attacks(piece){
+      var i = self.rowIndex();
+      var j = self.colIndex();
 
-  function attacks();
-      i = this.rowIndex()
-      j = this.colIndex()
-
-      u = piece.rowIndex()
-      v = piece.colIndex()
+      var u = piece.rowIndex();
+      var v = piece.colIndex();
 
       return (
           this.isMindfulOf(piece)
           && ((i ==u)
              || (j == u)
              || (i-j == u-v)
-             || (i+j == u+v)) )
-    
+             || (i+j == u+v)) 
+      )
+      }
+      }   
       
 
   
